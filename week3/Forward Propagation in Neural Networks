@@ -1,0 +1,10 @@
+function predictions = predict(W1,W2, X)
+
+% Your code goes here.
+% logistic neurons
+e=exp(1);
+g=1./(1+e.^(-1*(X*W1)));
+% linear neuron
+predictions = g*W2;
+
+endfunction
